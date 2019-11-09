@@ -26,8 +26,8 @@ class SystemCallResult(object):
         return self.bytes_stdout.decode(encoding)
 
     def __str__(self):
-        if self.bytesout:
-            return str(self.stdout)
+        if self.bytes_stdout:
+            return str(self.bytes_stdout)
         else:
             return ''
 
